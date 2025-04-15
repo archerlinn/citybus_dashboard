@@ -70,17 +70,6 @@ Each file should represent **one month**. You'll be prompted to enter the corres
 
 ---
 
-## 🌐 Deploy to Streamlit Cloud
-
-1. Push this project to a GitHub repo
-2. Go to [streamlit.io/cloud](https://streamlit.io/cloud)
-3. Connect your GitHub
-4. Select your repo and click **"Deploy"**
-
-Make sure `requirements.txt` is present to install dependencies.
-
----
-
 ## 📝 License
 
 This project is open source under the [MIT License](LICENSE).
@@ -89,18 +78,5 @@ This project is open source under the [MIT License](LICENSE).
 
 ## 👨‍💻 Author
 
-Built by [Your Name] — feel free to reach out or contribute!
+Built by Archer, Eli, and Mabel — feel free to reach out or contribute!
 ```
-
----
-
-### ✅ Next Steps
-
-- Replace `<YOUR_USERNAME>` and `[Your Name]` with your info.
-- Optionally create a `LICENSE` file if publishing open source.
-- Commit the file:
-  ```bash
-  git add README.md
-  git commit -m "Add README with project documentation"
-  git push
-  ```
