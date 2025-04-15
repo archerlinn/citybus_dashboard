@@ -1,10 +1,3 @@
-Here's a complete `README.md` file tailored for your **CityBus Dashboard** project. It includes setup instructions, feature overview, usage, and deployment tips:
-
----
-
-### 📄 `README.md`
-
-```markdown
 # 🚌 CityBus Dashboard
 
 A professional, interactive dashboard built with **Streamlit** and **Plotly** to visualize and analyze monthly public transit data. Designed for transit authorities, researchers, or civic tech teams to track route performance and efficiency.
