@@ -2,6 +2,8 @@
 
 A professional, interactive dashboard built with **Streamlit** and **Plotly** to visualize and analyze monthly public transit data. Designed for transit authorities, researchers, or civic tech teams to track route performance and efficiency.
 
+Link to the app --> https://citybus-dashboard.streamlit.app/
+
 ---
 
 ## 🔧 Features
