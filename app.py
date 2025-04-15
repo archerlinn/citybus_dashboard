@@ -59,7 +59,7 @@ if st.sidebar.button("Clear All Data"):
 # =============================================================================
 # Main Dashboard Layout
 # =============================================================================
-st.title("CityBus Industry Dashboard")
+st.title("CityBus Dashboard")
 st.markdown("Upload monthly datasets to generate dynamic visual reports.")
 
 if st.session_state["all_data"].empty:
