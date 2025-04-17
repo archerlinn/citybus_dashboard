@@ -164,11 +164,14 @@ else:
                       title="Revenue vs. Passengers",
                       labels={"Passengers": "Passengers", "Revenue": "Revenue ($)"})
     st.plotly_chart(fig6, use_container_width=True)
- # ==================== New Graphs for Total Miles, Hours, Efficiency =====================
+# ==================== New Graphs for Total Miles, Hours, Efficiency =====================
     st.markdown("---")
     st.header("📊 Additional Monthly Route Trends")
 
-    available_years = sorted(df_all["Parsed_Month"].dt.year.unique())
+    if "Parsed_Month" in df_all.columns and not df_all["Parsed_Month"].isna().all():
+        available_years = sorted(df_all["Parsed_Month"].dt.year.unique())
+    else:
+        available_years = []
     if available_years:
         selected_year = st.selectbox("Select Year", available_years)
         df_year = df_all[df_all["Parsed_Month"].dt.year == selected_year].copy()
@@ -220,5 +223,5 @@ else:
 
             st.plotly_chart(create_lollipop(top5, "🏎 Top 5 Most Efficient Routes", "green"), use_container_width=True)
             st.plotly_chart(create_lollipop(bottom5, "🐢 Bottom 5 Least Efficient Routes", "red"), use_container_width=True)
-            
+
     st.success("Dashboard updated with all visualizations!")
