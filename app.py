@@ -1,7 +1,7 @@
 import pandas as pd
 import plotly.express as px
 import streamlit as st
-import plotly.graph_objects as go 
+import plotly.graph_objects as go
 
 # =============================================================================
 # Session State: Initialize an empty DataFrame to store aggregated monthly data
@@ -166,8 +166,7 @@ else:
     st.plotly_chart(fig6, use_container_width=True)
 
     st.success("Dashboard updated with all visualizations!")
-
-# ===========================================================
+    # ===========================================================
 # EXTRA: Monthly Route Trends & Efficiency Lollipop Charts
 # ===========================================================
 st.markdown("---")
@@ -273,4 +272,3 @@ if available_years:
         st.success(f"Extra insights shown for {selected_year}")
     else:
         st.warning("No valid route column found (Route, RouteName, or RouteCode).")
-
