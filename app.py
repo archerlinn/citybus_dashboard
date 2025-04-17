@@ -165,10 +165,11 @@ else:
                       labels={"Passengers": "Passengers", "Revenue": "Revenue ($)"})
     st.plotly_chart(fig6, use_container_width=True)
 # ==================== New Graphs for Total Miles, Hours, Efficiency =====================
-    st.markdown("---")
+   st.markdown("---")
     st.header("📊 Additional Monthly Route Trends")
 
-    available_years = sorted(df_all["Parsed_Month"].dt.year.unique())
+    if "Parsed_Month" in df_all.columns and not df_all["Parsed_Month"].isna().all():
+        available_years = sorted(df_all["Parsed_Month"].dt.year.unique())
     if available_years:
         selected_year = st.selectbox("Select Year", available_years)
         df_year = df_all[df_all["Parsed_Month"].dt.year == selected_year].copy()
